@@ -6,6 +6,11 @@
     "build": "tsc"
   },
   "description": "Asynchronous task concurrency",
+  "homepage": "https://github.com/Mrchangchang/request-pool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mrchangchang/request-pool.git"
+  },
   "keywords": [
     "promise",
     "browser",
