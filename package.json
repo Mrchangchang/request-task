@@ -1,15 +1,15 @@
 {
-  "name": "request-pool",
+  "name": "request-task",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc -w",
     "build": "tsc"
   },
   "description": "Asynchronous task concurrency",
-  "homepage": "https://github.com/Mrchangchang/request-pool",
+  "homepage": "https://github.com/Mrchangchang/request-task",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mrchangchang/request-pool.git"
+    "url": "https://github.com/Mrchangchang/request-task.git"
   },
   "keywords": [
     "promise",
