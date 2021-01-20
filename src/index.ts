@@ -1,7 +1,7 @@
 /*
  * @Author: Mr Chang
  * @Date: 2021-01-13 15:02:45
- * @LastEditTime: 2021-01-14 15:37:52
+ * @LastEditTime: 2021-01-21 00:22:27
  * @LastEditors: Mr Chang
  * @Description: 
  * @FilePath: \request-pool\src\index.ts
@@ -89,12 +89,14 @@ class RequestPool {
       } catch(err) {
         // 如果超过最大重试次数
         if (++task.errorCount > this.maxErrorCount) {
+          // addTask 返回promise对象为rejected状态
           doReject(err)
         } else {
+          // 重试此任务，放到队头
           this.taskQueue.unshift(task)
-          // 继续递归调用
-          start()
         }
+        // 继续递归调用
+        start()
       }
     }
     //执行请求任务队列
