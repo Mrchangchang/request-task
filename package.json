@@ -1,6 +1,6 @@
 {
   "name": "request-task",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "tsc -w",
     "build": "tsc"
